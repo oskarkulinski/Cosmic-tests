@@ -1,60 +1,145 @@
 # Plan Testów zgodny z normą ISO 29119
 
-## 1. Wprowadzenie
-### Cel testów 
-~~Znalezienie bugów~~ Zapewnienie niezawodności, jakości i zgodności oprogramowania z wymaganiami.
-### Kontekst biznesowy oprogramowania
-COSMIC jest środowiskiem graficznym, które ma na celu unowocześnienie i zwiększenie komfortu pracy użytkowników w systemie Linux. Jest tworzony przez firmę System76, która planuje w przyszłości instalować COSMIC na sprzedawanych przez siebie laptopach, by zwiększyć ich atrakcyjność dla potencjalnych konsumentów. Grupą docelową są użytkownicy systemu Linux poszukujący nowoczesnego i dostosowanego do ich potrzeb środowiska graficznego, przede wszystkim profesjonalistów i inżynierów. COSMIC tworzony jest w języku programowania Rust. 
-### Zakres testów
-Testowane będą aplikacje dostarczane przez COSMIC (edytor tekstu, eksplorator plików, sklep aplikacji, edytor ustawień, terminal), applety, oraz polska wersja językowa.   
+## 1. Identyfikator
 
-Skupimy się testach funkcjonalnych, zarówno białoskrzynkowych jak i czarnoskrzynkowych. Przeprowadzimy przede wszystkim testy jednostkowe i systemowe.
-## 2. Cele i kryteria testów
-### Kryteria wejścia
-- Zainstalowany system POP!_OS 24.04
-- Dodane repozytorium popdev:master
-- Zaaktualizowany system operacyjny
-### Kryteria wyjścia
-- Koniec semestru
-- Spełnione wszystkie wymagania
-- Upewnienie się, że wszystkie kluczowe komponenty zostały przetestowane zgodnie z planem testów
-- Wszystkie zidentyfikowane błędy zostały zreprodukowane i zgłoszone
+TP-COSMIC-001
 
-### Kryteria akceptacji testów
-- ?????
+## 2. Wprowadzenie 
+Celem tego planu testowania jest ~~znalezienie bugów~~ zdefiniowanie podejścia, 
+narzędzi, zasobów, harmonogramu i aktywności niezbędnych do weryfikacji
+i walidacji COSMIC. Jest on środowiskiem graficznym dla system Linux, 
+stworzonym by uprościć i zmodernizować korzystanie z systemu Linux.
 
-## 3. Strategia testowania
-W pierwszej kolejności skupiać będziemy się na:
-- testach jednostkowych, których niedobór został zgłoszony przez twórców oprogramowania.
-- testach funkcjonalnych, przede wszystkim manualnych.
-- edytorze tekstu
-- eksploratorze plików
-- ustawieniach systemowych
-- appletach
-- polskiej wersji językowej
+## 3. Obiekt testowania   
+COSMIC w najnowszej wersji dostępnej.   
+Kluczowe funkcjonalności:   
+- edytor tekstu
+- eksplorator plików
+- sklep aplikacji
+- ustawienia systemowe
+- terminal
 
-W drugiej kolejności skupimy się na:
-- automatycznych testach funkcjonalnych
-- sklepie COSMIC
-- terminalu
-- testach regresyjnych
+## 4. Funkcjonalności do przetestowania
+- edytor tekstu
+- eksplorator plików
+- sklep aplikacji
+- ustawienia systemowe
+- terminal
+- polska wersja językowa
+- aplety
 
-Do automatyzacji testów skorzystamy z narzędzi takich jak Sikuli, KatalonStudio, PyAutoGui.
+## 5. Funkcjonalności, które nie będą testowane
+- obsługa okien
+- kompozytor
+- ikony
+- zrzuty ekranu
+- witacz
 
-## 4. Harmonogram i zasoby
-Tygodnie:   
- 1. Testy ustawień, edytora tekstu i polskiej wersji językowej, testy jednostkowe 
- 2. Kontynuacja tygodnia pierwszego, eksplorator plików, rozpoczęcie testowania appletów
- 3. Dalsze testowanie appletów, próby automatyzacji testów, testy jednostkowe
- 4. Testy sklepu, terminala, potencjalnie testy regresyjne
+## 6. Podejścia
+Techniki:   
+- testy białoskrzynkowe
+- testy czarnoskrzynkowe
+- testy jednostkowe
+- testy systemowe, całego oprogramowania
+Narzędzia i środowisko:
+- w celu atuomatyzzacji testów Sikuli, KatalonStudio, PyAutoGui
+- do testów jednostkowych Rust
+- Linux
 
-Podział ról:
-Podział ról będzie dynamicznie zmieniany zależnie od aktualnych priorytetów i umiejętności członków zespołu. Nie chcemy sztywnego przypisania ról, żeby każdy miał okazję nauczyć się wielu typów testowania.   
+## 7. Kryteria akceptacji lub odrzucenia
+Akceptacja:
+- zrealizowane testy dla wszystkich przypadków testowych
+- zweryfikowane wszystkie wymagania
+- 90% testów zakończonych wynikiem pozytywnym
 
-Wstępny podział ról:   
-Oskar - testy jednostkowe   
-Wieńczysław - testy jednostkowe, testy funkcjonalne   
-Filip - testy funkcjonalne   
-Kajetan - testy funkcjonalne
+Odrzucenie:
+- brak zweryfikowanych wszystkich wymagań
+- niezrealizowanie testów dla niektórych przypadków testowych
 
-## 5. Zarządzanie ryzykiem
+
+## 8. Kryteria zawieszenia i wymagania wznowienia
+- testy zostaną zawieszone w przypadku krytycznych problemów ze środowiskiem (na przykład awaria sprzętowa)
+- testy zostaną zawieszone w przypadku nieprzewidzianej sytuacji geopolitycznej stwarzającej znaczące zagrożenie dla życia lub zdrowia 
+zespołu testowego
+- testy zostaną wznowione po rozwiązaniu krytycznych problemow ze środowiskiem
+- testy zostaną wznowione po uspokojeniu się sytuacji geopolitycznej 
+
+## 9. Rezultaty testowanie
+- dokumentacja testowania w formacie Markdown
+- logi z wykonania testów 
+- raport podsumowujący testy, zawierający metryki i analizę defektów
+
+
+## 10. Zadania testowania
+- przygotowanie przypadków testowych
+- wykonanie testów
+- sporządzenie dokumentacji testów
+
+## 11. Potrzeby środowiskowe
+- Sprzęt:
+    - komputer z procesorem o architekturze x86
+
+- Oprogramowanie:
+    - Zainstalowany system POP!_OS 24.04
+    - Dodane repozytorium popdev:master
+    - Zaaktualizowany system operacyjny
+
+## 12. Odpowiedzialności
+- Oskar - testy jednostkowe, testy funkcjonalne
+- Wieńczysław - testy jednostkowe, testy funkcjonalne
+- Filip - testy funkcjonalne, testy systemowe
+- Kajetan - testy funkcjonalne, testy systemowe
+
+## 13. Harmonogram
+1. 23.11 - 29.11 - przygotowanie przypadków testowych wysokopoziomowe
+2. 30.11 - 6.12 - przygotowanie przypadków testowych niskopoziomowe
+3. 7.12 - 13.12 - wykonanie testów - tydzień 1
+4. 14.12 - 20.12 - wykonanie testów - tydzień 2
+5. 4.01 - 10.01 - wykonanie testów - tydzień 3
+6. 11.01 - 17.01 - wykonanie testów - tydzień 4
+7. 18.01 - 24.01 - przygotowanie finalnego raportu
+ i podsumowanie testów
+
+ ## 14. Zagrożenia i ich minimalizacja
+ 1. COSMIC jest pisany w Rust, więc wystąpienie błędów jest mniej prawdopodobne niż zwykle
+    - Przeprowadzanie gruntownych, dogłębnych testów 
+    - Wpływ średni
+    - Prawdopodobieństwo wysokie 
+ 2. Na razie niskie umiejętności testerskie mogą nie sprostać tak skomplikowanemu projektowi
+    - Poprawa umiejętności testerskich, zawężenie testów do jedynie części projektu
+    - Wpływ średni
+    - Prawdopodobieństwo średnie
+ 3. Brak pełnej dokumentacji wynikający z wersji alfa projektu
+    - Zapoznanie się z dostępną dokumentacją, aktywna komunikacja z developerami projektu
+    - Wpływ niski
+    - Prawdopodobieństwo wysokie
+ 4. Wysoka trudność przetestowania pewnych elementów aplikacji
+    - Poświęcenie większego nakładu pracy do tych elementów jeśli jest to wymagane lub skupienie się na elementach prostszych do testowania
+    - Wpływ niski
+    - Prawdopodobieństwo średnie
+ 5. Zdarzenie losowe (np. Gorączka Zachodniego Nilu, wojna nuklearna)
+    - Zadbanie o zdrowie, przyjmowanie dużej ilości witamin i środków uodparniających na promieniowanie
+    - Ryzyko średnie
+    - Wpływ średni
+ 6. Natłok obowiązków związanych z uczelnią lub pracą
+    - Rozłożenie pracy tak aby każdy w miarę dawał radę
+    - Ryzyko wysokie
+    - Wpływ niski
+ 7. Brak narzędzi do automatyzacji testów
+    - Zaznajomienie się z takimi narzędziami i innymi technologiami do testowania
+    - Wpływ średni
+    - Prawdopodobieństwo średnie
+ 8. Duża liczba aktualizacji
+    - Bycie na bieżąco z każdą zmianą, kontakt z developerami projektu
+    - Wpływ niski
+    - Prawdopodobieństwo wysokie
+ 9. Szybko rozwijający się projekt może doprowadzić do rozjeżdżania się planów i przypadków testowych
+    - „Napisanie przypadków testowych wysokiego poziomu i przeniesienie szczegółów, które mogą się zmieniać do danych testowych”
+    - Wpływ średni
+    - Prawdopodobieństwo średnie
+
+## 15. Zatwierdzenie
+ Plan testów zostanie zatwierdzony demokratycznie większością 3/4 głosów przez zespół, oraz przez prowadzącego zajęcia, po zapoznaniu się z rezultatami testowania.
+
+## 16. Repozytorium 
+https://github.com/oskarkulinski/Cosmic-tests
