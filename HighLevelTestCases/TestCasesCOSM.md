@@ -1,4 +1,6 @@
-# Przypadki testowe dla COSMIC polish language version.
+# Przypadki testowe dla COSMIC Polish language version.
 
 ## TC-COSM-001
-Cel: Sprawdzić, czy COSMIC i wszystkie jego komponenty są tłumaczone poprawnie oraz wyświetlane tak jak powinny być w języku polskim (zgodne z językiem twórców, czyli angielskim).
+
+Weryfikacja możliwości korzystania z polskiej wersji językowej (poprawnego tłumaczenia) COSMICa.
+**Cel**: Sprawdzić, czy COSMIC i wszystkie jego komponenty są tłumaczone poprawnie oraz wyświetlane tak jak powinny być w języku polskim (zgodne z językiem twórców, czyli angielskim).
