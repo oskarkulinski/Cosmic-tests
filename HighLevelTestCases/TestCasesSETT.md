@@ -1,4 +1,4 @@
-# To są przypadki testowe dla COSMIC settings.
+# Przypadki testowe dla COSMIC settings.
 
 ## TC-SETT-001
 
