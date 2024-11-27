@@ -1,3 +1,5 @@
+# To są przypadki testowe dla COSMIC settings.
+
 ## TC-SETT-001
 
 Cel: Sprawdzić, czy użytkownik może zmieniać ustawienia.
