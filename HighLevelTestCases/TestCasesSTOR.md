@@ -9,7 +9,7 @@ Weryfikacja możliwości zainstalowania aplikacji znalezionej w sklepie.
 **Cel:** Sprawdzić, czy po wybraniu aplikacji można ją zainstalować na urządzeniu, i czy zostanie przeprowadzony proces instalacji.
 
 ## TC-STOR-003
-Weryfikacja poprawnej instalacji aplikacji przez sklepie.   
+Weryfikacja poprawnej instalacji aplikacji przez sklep.   
 **Cel:** Sprawdzić, czy po zainstalowaniu aplikacji ta jest zainstalowana na systemie operacyjnym, dostępna i funkcjonalna, oraz czy informacja na ten temat jest poprawnie wyświetlana w sklepie.
 
 ## TC-STOR-004
