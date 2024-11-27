@@ -1,4 +1,4 @@
-# To są przypadki testowe dla COSMIC applet. 
+# Przypadki testowe dla COSMIC applets. 
 ## TC-APPL-001
 
 Cel: Sprawdzić, czy użytkownik jest informowany o tym fakcie (np. w postaci powiadomienia pop-up)
