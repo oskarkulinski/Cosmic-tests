@@ -43,7 +43,7 @@ Techniki:
 - testy systemowe, całego oprogramowania   
 
 Narzędzia i środowisko:
-- w celu atuomatyzzacji testów Sikuli, KatalonStudio, PyAutoGui
+- w celu automatyzacji testów Sikuli, KatalonStudio, PyAutoGui
 - do testów jednostkowych Rust
 - Linux
 
