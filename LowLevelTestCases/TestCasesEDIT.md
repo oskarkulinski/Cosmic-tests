@@ -4,7 +4,6 @@
 **Cel:** Sprawdzić, czy użytkownik może otworzyć dowolny plik tekstowy.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być zainstalowane na systemie Linux.
 - Plik tekstowy (np. .txt, .cpp, .py) musi istnieć w dostępnej lokalizacji na systemie plików.
 - Użytkownik musi posiadać odpowiednie uprawnienia do odczytu pliku.
 
@@ -29,7 +28,6 @@
 **Cel:** Sprawdzić, czy użytkownik może zapisać otwarty plik tekstowy w dowolnym katalogu, do którego ma uprawnienia w systemie operacyjnym.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być uruchomione.
 - Użytkownik musi mieć otwarty plik tekstowy (np. `sample.txt`) w edytorze.
 - Użytkownik musi mieć uprawnienia do zapisu w wybranym katalogu.
 
@@ -55,7 +53,6 @@
 **Cel:** Sprawdzić, czy użytkownik może utworzyć nowy, pusty plik tekstowy w edytorze.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być uruchomione.
 - Użytkownik musi mieć dostęp do katalogu, w którym można utworzyć nowy plik.
 
 **Kroki:**
@@ -78,7 +75,6 @@
 **Cel:** Sprawdzić, czy użytkownik może dodać lub usunąć tekst w otwartym pliku tekstowym.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być uruchomione.
 - Użytkownik musi mieć otwarty plik tekstowy (np. `sample.txt`) w edytorze.
 
 **Kroki:**
@@ -96,7 +92,6 @@
 **Cel:** Sprawdzić, czy użytkownik może zapisać zmiany dokonane w zawartości pliku tekstowego.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być uruchomione.
 - Użytkownik musi mieć otwarty plik tekstowy, który był edytowany (np. zmieniono jego zawartość).
 
 **Kroki:**
@@ -115,7 +110,6 @@
 **Cel:** Sprawdzić, czy użytkownik może zamknąć edytor tekstu, niezależnie od stanu otwartych lub edytowanych plików.
 
 **Warunki wstępne:**
-- Oprogramowanie "Cosmic" musi być uruchomione.
 - Użytkownik może mieć otwarty plik tekstowy, w którym dokonano zmian, ale plik nie został zapisany.
 
 **Kroki:**
