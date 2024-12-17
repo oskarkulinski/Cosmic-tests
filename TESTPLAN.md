@@ -42,7 +42,7 @@ Techniki:
 - testy jednostkowe
 - testy systemowe, całego oprogramowania
 Narzędzia i środowisko:
-- w celu automatyzzacji testów Sikuli, KatalonStudio, PyAutoGui
+- w celu automatyzacji testów Sikuli, KatalonStudio, PyAutoGui
 - do testów jednostkowych Rust
 - Linux
 
