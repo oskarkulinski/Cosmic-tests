@@ -20,13 +20,13 @@ Kluczowe funkcjonalności:
 - terminal
 
 ## 4. Funkcjonalności do przetestowania
-- edytor tekstu
-- eksplorator plików
-- sklep aplikacji
-- ustawienia systemowe
-- terminal
-- polska wersja językowa
-- aplety
+- edytor tekstu - TC-EDIT
+- eksplorator plików -  TC-FILE
+- sklep aplikacji - TC-STOR
+- ustawienia systemowe - TC-SETT
+- terminal - TC-TERM
+- polska wersja językowa - TC-COSM
+- aplety - TC-APPL
 
 ## 5. Funkcjonalności, które nie będą testowane
 - obsługa okien
