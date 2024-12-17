@@ -40,7 +40,8 @@ Techniki:
 - testy białoskrzynkowe
 - testy czarnoskrzynkowe
 - testy jednostkowe
-- testy systemowe, całego oprogramowania
+- testy systemowe, całego oprogramowania   
+
 Narzędzia i środowisko:
 - w celu atuomatyzzacji testów Sikuli, KatalonStudio, PyAutoGui
 - do testów jednostkowych Rust
