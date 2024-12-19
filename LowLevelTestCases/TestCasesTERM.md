@@ -1,6 +1,6 @@
 # Niskopoziomowe Przypadki Testowe dla Terminala
 
-## 1. TC-TERM-001
+## 1. LC-TERM-001
 
 **Cel:** Zweryfikować, czy użytkownik jest w stanie poprawnie wprowadzić dowolną komendę obsługiwaną przez interpretera Bash.
 
@@ -20,7 +20,7 @@
 - Terminal się nie otworzy.
 
 
-## 2. TC-TERM-002
+## 2. LC-TERM-002
 
 **Cel:** Zweryfikować, czy użytkownik może przeglądać historię wpisanych komend w terminalu za pomocą klawisza **strzałka w górę**.
 
