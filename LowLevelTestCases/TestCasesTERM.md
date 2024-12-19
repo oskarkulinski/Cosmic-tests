@@ -5,7 +5,7 @@
 **Cel:** Zweryfikować, czy użytkownik jest w stanie poprawnie wprowadzić dowolną komendę obsługiwaną przez interpretera Bash.
 
 **Warunki wstępne:**
-- Użytkownik musi mieć uprawnienia do uruchamiania terminala..
+- Użytkownik musi mieć uprawnienia do uruchamiania terminala.
 
 **Kroki:**
 1. Uruchomić terminal.
@@ -15,6 +15,9 @@
 **Oczekiwany wynik:**
 - W przypadku poprawnej komendy terminal wyświetli odpowiednią odpowiedź.
 - W przypadku niepoprawnej komendy terminal wyświetli komunikat o błędzie.
+
+**Scenariusz alternatywny (Użytkownik nie ma uprawnień do uruchamiania terminala):**
+- Terminal się nie otworzy.
 
 
 ## 2. TC-TERM-002
