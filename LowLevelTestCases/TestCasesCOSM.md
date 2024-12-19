@@ -1,4 +1,4 @@
-# TC-001: Weryfikacja poprawności rejestracji użytkownika z poprawnymi danymi
+# LC-COSM-001: Weryfikacja poprawności Polskiej wersji językowej
 **Cel:** Sprawdzić, czy wszystkie elementy COSMIC poprawnie tłumaczone są na język polski.   
 **Warunki wstępne:**
 - Język polski ustawiony jako język systemowy
