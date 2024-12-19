@@ -1,6 +1,6 @@
 # Niskopoziomowe Przypadki Testowe dla Edytora Tekstowego "Cosmic"
 
-## 1. TC-EDIT-01: Weryfikacja możliwości otwarcia pliku tekstowego
+## 1. LC-EDIT-01: Weryfikacja możliwości otwarcia pliku tekstowego
 **Cel:** Sprawdzić, czy użytkownik może otworzyć dowolny plik tekstowy.
 
 **Warunki wstępne:**
@@ -24,7 +24,7 @@
 
 ---
 
-## 2. TC-EDIT-02: Weryfikacja możliwości zapisania otwartego pliku tekstowego
+## 2. LC-EDIT-02: Weryfikacja możliwości zapisania otwartego pliku tekstowego
 **Cel:** Sprawdzić, czy użytkownik może zapisać otwarty plik tekstowy w dowolnym katalogu, do którego ma uprawnienia w systemie operacyjnym.
 
 **Warunki wstępne:**
@@ -49,7 +49,7 @@
 
 ---
 
-## 3. TC-EDIT-03: Weryfikacja możliwości utworzenia nowego pliku tekstowego
+## 3. LC-EDIT-03: Weryfikacja możliwości utworzenia nowego pliku tekstowego
 **Cel:** Sprawdzić, czy użytkownik może utworzyć nowy, pusty plik tekstowy w edytorze.
 
 **Warunki wstępne:**
@@ -71,7 +71,7 @@
 
 ---
 
-## 4. TC-EDIT-04: Weryfikacja możliwości edycji zawartości pliku tekstowego
+## 4. LC-EDIT-04: Weryfikacja możliwości edycji zawartości pliku tekstowego
 **Cel:** Sprawdzić, czy użytkownik może dodać lub usunąć tekst w otwartym pliku tekstowym.
 
 **Warunki wstępne:**
@@ -88,7 +88,7 @@
 
 ---
 
-## 5. TC-EDIT-05: Weryfikacja możliwości zapisania zmian w edytowanym pliku tekstowym
+## 5. LC-EDIT-05: Weryfikacja możliwości zapisania zmian w edytowanym pliku tekstowym
 **Cel:** Sprawdzić, czy użytkownik może zapisać zmiany dokonane w zawartości pliku tekstowego.
 
 **Warunki wstępne:**
@@ -106,7 +106,7 @@
 
 ---
 
-## 6. TC-EDIT-06: Weryfikacja możliwości zamknięcia edytora tekstu
+## 6. LC-EDIT-06: Weryfikacja możliwości zamknięcia edytora tekstu
 **Cel:** Sprawdzić, czy użytkownik może zamknąć edytor tekstu, niezależnie od stanu otwartych lub edytowanych plików.
 
 **Warunki wstępne:**
