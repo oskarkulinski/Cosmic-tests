@@ -1,119 +1,99 @@
 # Przypadki testowe dla COSMIC File Explorer
 
-## 1. LC-FILE-001: Weryfikacja możliwości utworzenia nowego katalogu
-**Cel:** Sprawdzić, czy użytkownik może utworzyć nowy katalog.
+## 1. LC-FILE-001: Weryfikacja poprawnego utworzenia nowego pliku tekstowego
+**Cel:** Sprawdzić, czy użytkownik może utworzyć nowy plik tekstowy.
 
 **Warunki wstępne:**  
-- Użytkownik musi posiadać uprawnienia do zapisu w katalogu, w którym ma być utworzony nowy katalog.
+- Użytkownik musi posiadać uprawnienia do zapisu w katalogu, w którym ma być utworzony nowy plik.
 
 **Kroki:**  
 1. Otworzyć File Explorer.  
-2. Przejść do katalogu, w którym ma zostać utworzony nowy katalog.  
-3. Kliknąć prawym przyciskiem myszy i wybrać opcję "Nowy katalog".  
-4. Wpisać nazwę katalogu i nacisnąć Enter.
+2. Przejść do katalogu, w którym ma zostać utworzony nowy plik.  
+3. Kliknąć prawym przyciskiem myszy i wybrać opcję "Nowy plik tekstowy".  
+4. Wpisać nazwę pliku i nacisnąć Enter.
 
 **Oczekiwany wynik:**  
-- Nowy katalog powinien zostać utworzony w wybranej lokalizacji i wyświetlony w interfejsie.
+- Nowy plik tekstowy powinien zostać utworzony w wybranej lokalizacji i wyświetlony w interfejsie.
 
-**Scenariusz alternatywny (Brak uprawnień do zapisu):**
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do zapisu w danej lokalizacji.  
-- Nowy katalog nie powinien zostać utworzony.
+**Scenariusz alternatywny:**  
+- **Brak uprawnień do zapisu:** System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień. Plik tekstowy nie powinien zostać utworzony.
 
 ---
 
-## 2. LC-FILE-002: Weryfikacja możliwości przeniesienia pliku do innego katalogu
-**Cel:** Sprawdzić, czy użytkownik może przenieść plik do innego katalogu.
+## 2. LC-FILE-002: Weryfikacja poprawnego usunięcia pliku tekstowego
+**Cel:** Sprawdzić, czy użytkownik może usunąć plik tekstowy.
 
 **Warunki wstępne:**  
-- Użytkownik musi posiadać uprawnienia do zapisu w docelowym katalogu i odczytu w źródłowym katalogu.  
-- Plik źródłowy musi istnieć.
+- Użytkownik musi posiadać uprawnienia do zapisu w katalogu, w którym znajduje się plik.  
+- Plik tekstowy musi istnieć.
 
 **Kroki:**  
 1. Otworzyć File Explorer.  
-2. Znaleźć plik, który ma zostać przeniesiony.  
-3. Przeciągnąć plik do docelowego katalogu lub użyć opcji "Wytnij" i "Wklej".  
+2. Znaleźć plik tekstowy, który ma zostać usunięty.  
+3. Kliknąć prawym przyciskiem myszy i wybrać opcję "Usuń".  
+4. Potwierdzić operację w wyświetlonym komunikacie.
 
 **Oczekiwany wynik:**  
-- Plik powinien zostać usunięty z katalogu źródłowego i pojawić się w katalogu docelowym.
+- Plik tekstowy powinien zostać usunięty z wybranego katalogu.
 
-**Scenariusz alternatywny 1 (Brak uprawnień do zapisu w docelowym katalogu):** 
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do zapisu w docelowym katalogu.  
-- Plik powinien pozostać w katalogu źródłowym.
-
-
-**Scenariusz alternatywny 2 (Brak uprawnień do odczytu w źródłowym katalogu):**  
-- Plik nie będzie widoczny w katalogu źródłowym lub dostępny do przeniesienia.  
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do odczytu w źródłowym katalogu.
+**Scenariusz alternatywny:**  
+- **Brak uprawnień do zapisu:** System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień. Plik tekstowy powinien pozostać w katalogu.
 
 ---
 
-## 3. LC-FILE-003: Weryfikacja możliwości kopiowania pliku do innego katalogu
-**Cel:** Sprawdzić, czy użytkownik może skopiować plik do innego katalogu.
+## 3. LC-FILE-003: Weryfikacja możliwości otworzenia dowolnego katalogu z uprawnieniami do odczytu
+**Cel:** Sprawdzić, czy użytkownik może otworzyć dowolny katalog z uprawnieniami do odczytu.
 
 **Warunki wstępne:**  
-- Użytkownik musi posiadać uprawnienia do zapisu w docelowym katalogu i odczytu w źródłowym katalogu.  
-- Plik źródłowy musi istnieć.
+- Katalog musi istnieć i być dostępny dla użytkownika z uprawnieniami do odczytu.
 
 **Kroki:**  
 1. Otworzyć File Explorer.  
-2. Znaleźć plik, który ma zostać skopiowany.  
-3. Kliknąć prawym przyciskiem myszy i wybrać opcję "Kopiuj".  
-4. Przejść do docelowego katalogu i kliknąć "Wklej".
+2. Znaleźć katalog, który użytkownik chce otworzyć.  
+3. Dwukrotnie kliknąć ikonę katalogu lub wybrać "Otwórz" z menu kontekstowego.
 
 **Oczekiwany wynik:**  
-- Plik powinien pozostać w katalogu źródłowym i jednocześnie pojawić się w katalogu docelowym.
+- Katalog powinien zostać otwarty i zawartość powinna być widoczna w interfejsie.
 
-**Scenariusz alternatywny 1 (Brak uprawnień do zapisu w docelowym katalogu):**  
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do zapisu w docelowym katalogu.  
-- Plik nie powinien zostać skopiowany do katalogu docelowego, ale powinien pozostać w katalogu źródłowym.
-
-
-**Scenariusz alternatywny 2 (Brak uprawnień do odczytu w źródłowym katalogu):**  
-- Plik nie będzie widoczny w katalogu źródłowym lub dostępny do skopiowania.  
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do odczytu w źródłowym katalogu.
+**Scenariusz alternatywny:**  
+- **Brak uprawnień do odczytu:** System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień. Katalog nie powinien zostać otwarty, a jego zawartość powinna pozostać niedostępna.
 
 ---
 
-## 4. LC-FILE-004: Weryfikacja możliwości zmiany nazwy pliku lub katalogu
-**Cel:** Sprawdzić, czy użytkownik może zmienić nazwę istniejącego pliku lub katalogu.
+## 4. LC-FILE-004: Weryfikacja możliwości sortowania wyświetlanych plików
+**Cel:** Sprawdzić, czy użytkownik może sortować wyświetlane pliki według różnych kryteriów (nazwa, data, rozmiar) oraz w sposób odwrotny.
 
 **Warunki wstępne:**  
-- Użytkownik musi posiadać uprawnienia do zapisu w katalogu, w którym znajduje się plik lub katalog.  
-- Plik lub katalog musi istnieć.
+- Katalog powinien zawierać wiele plików o różnych nazwach, datach utworzenia i rozmiarach.
 
 **Kroki:**  
 1. Otworzyć File Explorer.  
-2. Znaleźć plik lub katalog do zmiany nazwy.  
-3. Kliknąć prawym przyciskiem myszy i wybrać "Zmień nazwę".  
-4. Wprowadzić nową nazwę i nacisnąć Enter.
+2. Przejść do katalogu zawierającego pliki.  
+3. Kliknąć nagłówek kolumny (np. "Nazwa", "Data", "Rozmiar"), aby posortować pliki według wybranego kryterium.  
+4. Kliknąć ponownie, aby zmienić kolejność sortowania na odwrotną.
 
 **Oczekiwany wynik:**  
-- Nazwa pliku lub katalogu powinna zostać zmieniona i poprawnie wyświetlona w interfejsie.
+- Pliki powinny zostać posortowane zgodnie z wybranym kryterium i w wybranej kolejności.
 
-
-**Scenariusz alternatywny 1 (Brak uprawnień do zapisu w katalogu):**  
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień do zmiany nazwy pliku lub katalogu.  
-- Nazwa pliku lub katalogu powinna pozostać niezmieniona.
-
-**Scenariusz alternatywny 2 (Plik lub katalog jest otwarty w innym programie):**  
-- System powinien wyświetlić komunikat o błędzie, informujący użytkownika, że plik lub katalog jest obecnie używany i nie można zmienić jego nazwy.  
-- Nazwa pliku lub katalogu powinna pozostać niezmieniona.
+**Scenariusz alternatywny:**  
+- **Błąd w odczycie metadanych plików:** Jeśli metadane (np. data utworzenia) są niedostępne, system powinien pominąć te pliki w sortowaniu lub wyświetlić odpowiedni komunikat.
 
 ---
 
-## 5. LC-FILE-005: Weryfikacja możliwości wyszukiwania plików lub katalogów według nazwy
-**Cel:** Sprawdzić, czy użytkownik może wyszukać pliki lub katalogi na podstawie nazwy.
+## 5. LC-FILE-005: Weryfikacja poprawnego otworzenia istniejącego pliku tekstowego
+**Cel:** Sprawdzić, czy użytkownik może otworzyć istniejący plik tekstowy.
 
 **Warunki wstępne:**  
-- System musi zawierać pliki lub katalogi z nazwami pasującymi do wyszukiwanego wzorca.
+- Plik tekstowy musi istnieć i być dostępny dla użytkownika z uprawnieniami do odczytu.
 
 **Kroki:**  
 1. Otworzyć File Explorer.  
-2. Wpisać nazwę pliku lub katalogu w pasku wyszukiwania.  
-3. Nacisnąć Enter i przeglądać wyniki.
+2. Znaleźć plik tekstowy, który użytkownik chce otworzyć.  
+3. Dwukrotnie kliknąć ikonę pliku tekstowego lub wybrać "Otwórz" z menu kontekstowego.
 
 **Oczekiwany wynik:**  
-- Wyniki wyszukiwania powinny wyświetlić wszystkie pliki i katalogi pasujące do wpisanej nazwy.
+- Plik tekstowy powinien zostać otwarty w domyślnym edytorze tekstu.
 
-**Scenariusz alternatywny (Brak wyników wyszukiwania):** 
-- System powinien wyświetlić komunikat informujący, że nie znaleziono plików ani katalogów pasujących do podanej nazwy.
+**Scenariusz alternatywny:**  
+- **Brak uprawnień do odczytu:** System powinien wyświetlić komunikat o błędzie, informujący użytkownika o braku uprawnień. Plik nie powinien zostać otwarty.  
+- **Plik jest uszkodzony lub niedostępny:** System powinien wyświetlić komunikat o błędzie, informujący użytkownika o problemach z plikiem.
