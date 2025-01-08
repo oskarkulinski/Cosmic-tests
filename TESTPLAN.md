@@ -51,7 +51,7 @@ Narzędzia i środowisko:
 Akceptacja:
 - zrealizowane testy dla wszystkich przypadków testowych
 - zweryfikowane wszystkie wymagania
-- 90% testów zakończonych wynikiem pozytywnym
+- 90% wykonanych przypadków testowych zakończone wynikiem pozytywnym
 
 Odrzucenie:
 - brak zweryfikowanych wszystkich wymagań
