@@ -24,7 +24,7 @@ Pulpit - wygląd
 
 Pulpit - panel
 - Przełącznik automatycznego chowania panelu - pozytywny
-- Wybór z listy pozycji na ekranie - pozytywny (delay)
+- Wybór z listy pozycji na ekranie
 - Przełącznik "Przerwa pomiędzy panelem a krawędziami ekranu" - pozytywny
 - Przełącznik "Rozszerz panel do krawędzi ekranu" - pozytywny
 - Wybór z listy "Wygląd" - pozytywny
@@ -93,7 +93,7 @@ Pulpit - wygląd
 
 Pulpit - panel
 - Przełącznik automatycznego chowania panelu - pozytywny
-- Wybór z listy pozycji na ekranie - pozytywny (delay)
+- Wybór z listy pozycji na ekranie
 - Przełącznik "Przerwa pomiędzy panelem a krawędziami ekranu" - pozytywny
 - Przełącznik "Rozszerz panel do krawędzi ekranu" - pozytywny
 - Wybór z listy "Wygląd" - pozytywny
@@ -151,7 +151,7 @@ Pulpit - tapeta
 - Przełączanie "Ta sama tapeta na wszystkich wyświetlaczach" - pozytywny
 - Wybór z listy dopasowania tapety - pozytywny
 - Przełączanie Pokaz Slajdów - pozytywny
-- Zmiana tapety z listy - pozytywny
+- Zmiana tapety z listy - negatywny, dla włączonego przełącznika "Ta sama tapeta na wszystkich wyświetlaczach" i wybranym "Dopasowana do ekranu" z listy "Dopasowanie tapety" tapeta nie zmienia się za pierwszym razem (Żeby zmienić tapetę trzeba wyjśc i wejść w zakładkę tapeta, kolejne zmiany tapety odbywają się już bez problemu)
 
 Pulpit - wygląd
 - Motyw ciemny/jasny - pozytywny
@@ -162,7 +162,7 @@ Pulpit - wygląd
 
 Pulpit - panel
 - Przełącznik automatycznego chowania panelu - pozytywny
-- Wybór z listy pozycji na ekranie - pozytywny (delay)
+- Wybór z listy pozycji na ekranie - pozytywny - ale pozycja zmienia się z opóźnieniem
 - Przełącznik "Przerwa pomiędzy panelem a krawędziami ekranu" - pozytywny
 - Przełącznik "Rozszerz panel do krawędzi ekranu" - pozytywny
 - Wybór z listy "Wygląd" - pozytywny
@@ -171,7 +171,7 @@ Pulpit - panel
 
 Pulpit - dok
 - Przełącznik "Dok" - pozytywny
-- Przełącznik "automatycznie chowaj panel" - pozytywny
+- Przełącznik "automatycznie chowaj panel" - pozytywny - tłumaczenie na język polski wydaje się błędnę
 - Wybór z listy "Pozycja na ekranie" - pozytywny
 - Przełącznik "Przerwa pomiędzy dokiem a krawędziami ekranu" - pozytywny
 - Przełącznik "Rozszerz dok do krawędzi ekranu" - pozytywny
