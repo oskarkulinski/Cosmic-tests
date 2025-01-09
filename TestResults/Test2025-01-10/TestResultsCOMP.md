@@ -1,4 +1,4 @@
-# Rezultaty testów dla przypadków testowych niskopoziomowych COSMIC Applets
+# Rezultaty testów dla przypadków testowych niskopoziomowych COSMIC Compositor
 
 ## LC-COMP-001
 
